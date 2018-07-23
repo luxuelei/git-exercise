@@ -125,5 +125,18 @@ $ git branch -d <branchName>
 # Delete a remote branch
 $ git push <remote> --delete <branchName>
 
+# To rebase a base branch with changes from a topic branch, or to replay commits on topic branch onto base branch
+# 1st checkout the topic branch
+$ git checkout <topicBranch>
+$ git checkout branch01
+# 2nd, rebase the base branch
+$ git rebase <baseBranch>
+$ git rebase master
 
+# To rebase without checkout
+$ git rebase <bashBranch> <topicBranch>
 
+# In general the way to get the best of both worlds is to rebase local changes you've made but haven't shared yet before you push them in order to clean up your story, but never rebase anything you've pushed somewhere.
+
+# Update the remote upstream the current branch is tracking
+$ git branch --set-upstream-to <remote>/<branch>
