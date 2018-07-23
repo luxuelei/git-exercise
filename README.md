@@ -109,3 +109,14 @@ $ git checkout <branchName>
 
 # To create a branch and switch to it at the same time
 $ git checkout -b <branchName>
+
+# To merge branch back to master
+# 1st checkout master, swith back to master
+$ git checkout master
+
+# 2nd merge branch
+$ git merge <branchName>
+
+
+# Delete a branch
+$ git branch -d <branchName>
