@@ -107,4 +107,13 @@ $ git branch <branchName>
 # To switch to an existing branch, run git checkout
 $ git checkout <branchName>
 
+# To merge branch back to master
+# 1st checkout master, swith back to master
+$ git checkout master
 
+# 2nd merge branch
+$ git merge <branchName>
+
+
+# Delete a branch
+$ git branch -d <branchName>
