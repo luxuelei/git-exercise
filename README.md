@@ -49,3 +49,28 @@ $ git log --since=2.weeks
 # Redo the last commit
 $ git commit --amend
 
+# Unstaging a Staged File
+$ git reset HEAD <file>...
+
+# Unmodifying a Modified File
+$ git checkout -- <file>...
+
+# Showing Your Remotes
+$ git remote
+$ git remote -v
+
+# Adding Remote Repositories
+$ git remote add <name> <url>
+
+# Removing remote 
+$ git remote rm <name>
+
+# Fetching and Pulling from Your Remotes
+$ git fetch <remote>
+
+# Note, git fetch does not merge the work to locally, git pull will automatically merge it
+# Running git pull generally fetches data from the server you originally cloned from and automatically tries to merge it into the code youÎéÎ÷re currently working on
+$ git pull
+
+# Push to remote
+$ git push <remote> <branch>
