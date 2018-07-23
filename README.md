@@ -29,3 +29,23 @@ $ git commit
 
 # Git automatically stage every file that is already tracked before doing the commit, letting you skip the git add part:
 $ git commit -a
+
+# The git mv command is actaully doing multiple tasks in one command, it is not really renaming the file
+$ git mv fileFrom fileTo
+
+# is equivalent to
+
+$ mv README.md README
+$ git rm fileFrom
+$ git add fileTo
+
+# Viewing the Commit History
+$ git log
+$ git log -p -2
+$ git log --stat
+$ git log --pretty=oneline
+$ git log --since=2.weeks
+
+# Redo the last commit
+$ git commit --amend
+
