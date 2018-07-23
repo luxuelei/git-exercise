@@ -10,6 +10,7 @@
 
 # Ignore temporary files
 *~
+*.swp
 
 # ignore all .a files
 *.a
