@@ -74,3 +74,37 @@ $ git pull
 
 # Push to remote
 $ git push <remote> <branch>
+
+# Inspecting remote
+$ git remote show <remote>
+
+# List your tages
+$ git tag
+$ git tag -l
+
+# Create a tag
+$ git tag -a <tag> -m <message>
+
+# Show a tag
+$ git show <tag>
+
+# Creating a lightweight tag
+$ git tag <tag>
+$ git tag v0.2-lw
+
+# Tag at previous commit
+$ git tag -a <tag> <commitHash>
+
+# Push tag to remote
+$ git push <remote> <tag>
+
+# Checkout tag
+$ git checkout <tag>
+
+# Creating a new branch, this command only create a branch, it does not switch ot the branch
+$ git branch <branchName>
+
+# To switch to an existing branch, run git checkout
+$ git checkout <branchName>
+
+
