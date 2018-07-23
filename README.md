@@ -72,6 +72,8 @@ $ git fetch <remote>
 # Running git pull generally fetches data from the server you originally cloned from and automatically tries to merge it into the code youÎéÎ÷re currently working on
 $ git pull
 
+# Generally itÎéÎ÷s better to simply use the fetch and merge commands explicitly as the magic of git pull can often be confusing.
+
 # Push to remote
 $ git push <remote> <branch>
 
@@ -117,6 +119,11 @@ $ git checkout master
 # 2nd merge branch
 $ git merge <branchName>
 
-
 # Delete a branch
 $ git branch -d <branchName>
+
+# Delete a remote branch
+$ git push <remote> --delete <branchName>
+
+
+
